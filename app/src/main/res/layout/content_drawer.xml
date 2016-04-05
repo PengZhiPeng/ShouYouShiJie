@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhipeng="http://schemas.android.com/apk/res/com.example.acer.shouyoushijie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.imooc.baidumap.DrawerActivity"
+    tools:showIn="@layout/app_bar_drawer">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--<android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FF4081"
+        app:tabTextColor="#545454" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#dfdfdf"
+        android:orientation="horizontal">
+
+        <com.example.acer.shouyoushijie.utils.ChangeColorIconWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhipeng:myicon="@drawable/ic_menu_start_conversation"
+            zhipeng:text="主页"
+            zhipeng:text_size="12sp"
+            zhipeng:mycolor="#ff2550" />
+
+        <com.example.acer.shouyoushijie.utils.ChangeColorIconWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhipeng:myicon="@drawable/ic_menu_friendslist"
+            zhipeng:text="发现"
+            zhipeng:text_size="12sp"
+            zhipeng:mycolor="#ff2550" />
+
+        <com.example.acer.shouyoushijie.utils.ChangeColorIconWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhipeng:myicon="@drawable/ic_menu_emoticons"
+            zhipeng:text="找游戏"
+            zhipeng:text_size="12sp"
+            zhipeng:mycolor="#ff2550" />
+
+        <com.example.acer.shouyoushijie.utils.ChangeColorIconWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhipeng:myicon="@drawable/ic_menu_allfriends"
+            zhipeng:text="福利"
+            zhipeng:text_size="12sp"
+            zhipeng:mycolor="#ff2550" />
+    </LinearLayout>
+
+</LinearLayout>
